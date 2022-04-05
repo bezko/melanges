@@ -1,0 +1,5 @@
+from ubuntu:focal
+RUN apt-get update && apt-get install -y python-csound
+WORKDIR /root
+COPY main.py main.py
+CMD [ "/bin/bash" ]
